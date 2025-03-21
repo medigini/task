@@ -1,0 +1,8 @@
+{
+    "exec": "go run  main.go",
+    "ext": "go",
+    "ignore": [
+      ".git",
+      "node_modules"
+    ]
+  }

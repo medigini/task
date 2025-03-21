@@ -1,0 +1,16 @@
+
+
+services:
+  task-ms: 
+    build:
+      context: ./
+    container_name: task
+    image: task
+    ports:
+      - "8080:4000"
+    restart: always
+    # env_file:
+    #   - ./.env
+
+    # volumes:
+    #   - ./log:/app/log

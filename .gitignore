@@ -1,0 +1,34 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Compiled Go packages
+*.exe
+*.test
+*.prof
+
+# Compiled Output from go tool
+*.test
+*.out
+
+# Ignore the local development configuration file
+/config/local.json
+
+# Ignore any executables
+/bin/*
+/.env
+
+# Ignore any vendored packages
+/vendor/
+
+# Ignore the Go module cache
+# /go.sum
+# /go.mod
+
+# Ignore any IDE or editor specific files
+.idea/
+.vscode/
+
+# Ignore any build artifacts
+/build/

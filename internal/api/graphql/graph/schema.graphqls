@@ -1,0 +1,34 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+type Material {
+  id: Int!
+  materialName: String!
+  materialType: String!
+  price: Float!
+  unit: String!
+  rating: Int!
+  quality: Int!
+}
+
+type Supplier {
+  id: Int!
+  supplierName: String!
+  supplierLocation: String!
+  stockAvailability: String!
+  stockQuantity: Int!
+}
+
+type BestMaterial {
+  material: Material!
+  supplier: Supplier!
+}
+
+type Query {
+  bestMaterial(
+    materialType: String!
+    price: Float!
+    locality: String!
+  ): [BestMaterial!]!
+}
